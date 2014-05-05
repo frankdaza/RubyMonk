@@ -1,4 +1,4 @@
 def sort_string(string)
-  l = string.split
-  
+  string.split(' ').sort{|x, y| x.length <=> y.length}.join(' ')
 end
+puts sort_string("Sort words in a sentence")
