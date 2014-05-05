@@ -1,10 +1,10 @@
-def find_frequency(sentence, word)
-  l = sentence.split
-  count = 0
-  l.each do |i|
-  	if i.casecmp(word) == 0
-  		count += 1
-  	end
+def sort_string(string)
+  l1 = string.split
+  l2 = []
+  l1.each do |i|
+  	l2 << l1.length
   end
-  return count
+  puts l2
 end
+
+sort_string("Sort words in a sentence")
